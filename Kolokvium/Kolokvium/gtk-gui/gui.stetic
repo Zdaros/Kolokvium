@@ -141,11 +141,11 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.Button" id="SearchButton">
+                  <widget class="Gtk.Button" id="Delete">
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
                     <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">Пошук</property>
+                    <property name="Label" translatable="yes">Видалити</property>
                     <property name="UseUnderline">True</property>
                   </widget>
                   <packing>
@@ -160,7 +160,7 @@
                     <property name="MemberName" />
                     <property name="Spacing">6</property>
                     <child>
-                      <widget class="Gtk.Entry" id="SearchEntry">
+                      <widget class="Gtk.Entry" id="DeleteEntry">
                         <property name="MemberName" />
                         <property name="CanFocus">True</property>
                         <property name="IsEditable">True</property>
@@ -172,24 +172,12 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="Gtk.MenuBar" id="SearchManuBar">
+                      <widget class="Gtk.Button" id="Redact">
                         <property name="MemberName" />
-                        <node name="SearchManuBar" type="Menubar">
-                          <node type="Menu" action="Action18">
-                            <node type="Menuitem" action="Action7" />
-                            <node type="Menuitem" action="Action8" />
-                            <node type="Menuitem" action="Action12" />
-                            <node type="Menuitem" action="Action10" />
-                            <node type="Menuitem" action="Action11" />
-                            <node type="Menuitem" action="Action13" />
-                            <node type="Menuitem" action="Action14" />
-                            <node type="Menuitem" action="Action15" />
-                            <node type="Menuitem" action="Action16" />
-                            <node type="Menuitem" action="SO2Action" />
-                            <node type="Menuitem" action="Action17" />
-                            <node type="Menuitem" action="HCIAction" />
-                          </node>
-                        </node>
+                        <property name="CanFocus">True</property>
+                        <property name="Type">TextOnly</property>
+                        <property name="Label" translatable="yes"> Редагувати</property>
+                        <property name="UseUnderline">True</property>
                       </widget>
                       <packing>
                         <property name="Position">1</property>
@@ -235,7 +223,16 @@
           </packing>
         </child>
         <child>
-          <placeholder />
+          <widget class="Gtk.Label" id="Taxt">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">label1</property>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
         </child>
         <child>
           <placeholder />

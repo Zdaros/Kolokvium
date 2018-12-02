@@ -51,15 +51,17 @@ public partial class MainWindow
 
 	private global::Gtk.Button AddButton;
 
-	private global::Gtk.Button SearchButton;
+	private global::Gtk.Button Delete;
 
 	private global::Gtk.HBox Search;
 
-	private global::Gtk.Entry SearchEntry;
+	private global::Gtk.Entry DeleteEntry;
 
-	private global::Gtk.MenuBar SearchManuBar;
+	private global::Gtk.Button Redact;
 
 	private global::Gtk.HSeparator hseparator3;
+
+	private global::Gtk.Label Taxt;
 
 	protected virtual void Build()
 	{
@@ -156,13 +158,13 @@ public partial class MainWindow
 		w3.Expand = false;
 		w3.Fill = false;
 		// Container child Menu.Gtk.Box+BoxChild
-		this.SearchButton = new global::Gtk.Button();
-		this.SearchButton.CanFocus = true;
-		this.SearchButton.Name = "SearchButton";
-		this.SearchButton.UseUnderline = true;
-		this.SearchButton.Label = global::Mono.Unix.Catalog.GetString("Пошук");
-		this.Menu.Add(this.SearchButton);
-		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.Menu[this.SearchButton]));
+		this.Delete = new global::Gtk.Button();
+		this.Delete.CanFocus = true;
+		this.Delete.Name = "Delete";
+		this.Delete.UseUnderline = true;
+		this.Delete.Label = global::Mono.Unix.Catalog.GetString("Видалити");
+		this.Menu.Add(this.Delete);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.Menu[this.Delete]));
 		w4.Position = 1;
 		w4.Expand = false;
 		w4.Fill = false;
@@ -171,20 +173,22 @@ public partial class MainWindow
 		this.Search.Name = "Search";
 		this.Search.Spacing = 6;
 		// Container child Search.Gtk.Box+BoxChild
-		this.SearchEntry = new global::Gtk.Entry();
-		this.SearchEntry.CanFocus = true;
-		this.SearchEntry.Name = "SearchEntry";
-		this.SearchEntry.IsEditable = true;
-		this.SearchEntry.InvisibleChar = '●';
-		this.Search.Add(this.SearchEntry);
-		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.Search[this.SearchEntry]));
+		this.DeleteEntry = new global::Gtk.Entry();
+		this.DeleteEntry.CanFocus = true;
+		this.DeleteEntry.Name = "DeleteEntry";
+		this.DeleteEntry.IsEditable = true;
+		this.DeleteEntry.InvisibleChar = '●';
+		this.Search.Add(this.DeleteEntry);
+		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.Search[this.DeleteEntry]));
 		w5.Position = 0;
 		// Container child Search.Gtk.Box+BoxChild
-		this.UIManager.AddUiFromString(@"<ui><menubar name='SearchManuBar'><menu name='Action18' action='Action18'><menuitem name='Action7' action='Action7'/><menuitem name='Action8' action='Action8'/><menuitem name='Action12' action='Action12'/><menuitem name='Action10' action='Action10'/><menuitem name='Action11' action='Action11'/><menuitem name='Action13' action='Action13'/><menuitem name='Action14' action='Action14'/><menuitem name='Action15' action='Action15'/><menuitem name='Action16' action='Action16'/><menuitem name='SO2Action' action='SO2Action'/><menuitem name='Action17' action='Action17'/><menuitem name='HCIAction' action='HCIAction'/></menu></menubar></ui>");
-		this.SearchManuBar = ((global::Gtk.MenuBar)(this.UIManager.GetWidget("/SearchManuBar")));
-		this.SearchManuBar.Name = "SearchManuBar";
-		this.Search.Add(this.SearchManuBar);
-		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.Search[this.SearchManuBar]));
+		this.Redact = new global::Gtk.Button();
+		this.Redact.CanFocus = true;
+		this.Redact.Name = "Redact";
+		this.Redact.UseUnderline = true;
+		this.Redact.Label = global::Mono.Unix.Catalog.GetString(" Редагувати");
+		this.Search.Add(this.Redact);
+		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.Search[this.Redact]));
 		w6.Position = 1;
 		w6.Expand = false;
 		w6.Fill = false;
@@ -209,6 +213,15 @@ public partial class MainWindow
 		w10.Position = 0;
 		w10.Expand = false;
 		w10.Fill = false;
+		// Container child Manu.Gtk.Box+BoxChild
+		this.Taxt = new global::Gtk.Label();
+		this.Taxt.Name = "Taxt";
+		this.Taxt.LabelProp = global::Mono.Unix.Catalog.GetString("label1");
+		this.Manu.Add(this.Taxt);
+		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.Manu[this.Taxt]));
+		w11.Position = 1;
+		w11.Expand = false;
+		w11.Fill = false;
 		this.Add(this.Manu);
 		if ((this.Child != null))
 		{
