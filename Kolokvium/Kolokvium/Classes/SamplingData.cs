@@ -11,6 +11,8 @@ namespace Kolokvium.Classes
         private float SO2;
         private float HCI;
 
+        public int id;
+
         public string GetGeomorphicBinding() { return GeomorphicBinding; }
         public string GetDate() { return Date; }
         public float GetGasoline() { return Gasoline; }

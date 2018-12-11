@@ -55,13 +55,43 @@ public partial class MainWindow
 
 	private global::Gtk.HBox Search;
 
-	private global::Gtk.Entry DeleteEntry;
+	private global::Gtk.Entry IDEntry;
 
 	private global::Gtk.Button Redact;
 
 	private global::Gtk.HSeparator hseparator3;
 
-	private global::Gtk.Label Taxt;
+	private global::Gtk.HBox hbox1;
+
+	private global::Gtk.HBox hbox7;
+
+	private global::Gtk.Entry id;
+
+	private global::Gtk.Entry entry3;
+
+	private global::Gtk.Entry entry5;
+
+	private global::Gtk.HBox hbox3;
+
+	private global::Gtk.Entry entry7;
+
+	private global::Gtk.Entry entry9;
+
+	private global::Gtk.Entry entry11;
+
+	private global::Gtk.HBox hbox5;
+
+	private global::Gtk.Entry entry13;
+
+	private global::Gtk.Entry entry15;
+
+	private global::Gtk.HBox hbox9;
+
+	private global::Gtk.Entry entry17;
+
+	private global::Gtk.Entry entry19;
+
+	private global::Gtk.Label Text;
 
 	protected virtual void Build()
 	{
@@ -173,13 +203,13 @@ public partial class MainWindow
 		this.Search.Name = "Search";
 		this.Search.Spacing = 6;
 		// Container child Search.Gtk.Box+BoxChild
-		this.DeleteEntry = new global::Gtk.Entry();
-		this.DeleteEntry.CanFocus = true;
-		this.DeleteEntry.Name = "DeleteEntry";
-		this.DeleteEntry.IsEditable = true;
-		this.DeleteEntry.InvisibleChar = '●';
-		this.Search.Add(this.DeleteEntry);
-		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.Search[this.DeleteEntry]));
+		this.IDEntry = new global::Gtk.Entry();
+		this.IDEntry.CanFocus = true;
+		this.IDEntry.Name = "IDEntry";
+		this.IDEntry.IsEditable = true;
+		this.IDEntry.InvisibleChar = '●';
+		this.Search.Add(this.IDEntry);
+		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.Search[this.IDEntry]));
 		w5.Position = 0;
 		// Container child Search.Gtk.Box+BoxChild
 		this.Redact = new global::Gtk.Button();
@@ -214,22 +244,151 @@ public partial class MainWindow
 		w10.Expand = false;
 		w10.Fill = false;
 		// Container child Manu.Gtk.Box+BoxChild
-		this.Taxt = new global::Gtk.Label();
-		this.Taxt.Name = "Taxt";
-		this.Taxt.LabelProp = global::Mono.Unix.Catalog.GetString("label1");
-		this.Manu.Add(this.Taxt);
-		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.Manu[this.Taxt]));
-		w11.Position = 1;
-		w11.Expand = false;
-		w11.Fill = false;
+		this.hbox1 = new global::Gtk.HBox();
+		this.hbox1.Name = "hbox1";
+		this.hbox1.Spacing = 6;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.hbox7 = new global::Gtk.HBox();
+		this.hbox7.Name = "hbox7";
+		this.hbox7.Spacing = 6;
+		// Container child hbox7.Gtk.Box+BoxChild
+		this.id = new global::Gtk.Entry();
+		this.id.CanFocus = true;
+		this.id.Name = "id";
+		this.id.IsEditable = true;
+		this.id.InvisibleChar = '●';
+		this.hbox7.Add(this.id);
+		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.id]));
+		w11.Position = 0;
+		// Container child hbox7.Gtk.Box+BoxChild
+		this.entry3 = new global::Gtk.Entry();
+		this.entry3.CanFocus = true;
+		this.entry3.Name = "entry3";
+		this.entry3.IsEditable = true;
+		this.entry3.InvisibleChar = '●';
+		this.hbox7.Add(this.entry3);
+		global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.entry3]));
+		w12.Position = 1;
+		// Container child hbox7.Gtk.Box+BoxChild
+		this.entry5 = new global::Gtk.Entry();
+		this.entry5.CanFocus = true;
+		this.entry5.Name = "entry5";
+		this.entry5.IsEditable = true;
+		this.entry5.InvisibleChar = '●';
+		this.hbox7.Add(this.entry5);
+		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.entry5]));
+		w13.Position = 2;
+		this.hbox1.Add(this.hbox7);
+		global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.hbox7]));
+		w14.Position = 0;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.hbox3 = new global::Gtk.HBox();
+		this.hbox3.Name = "hbox3";
+		this.hbox3.Spacing = 6;
+		// Container child hbox3.Gtk.Box+BoxChild
+		this.entry7 = new global::Gtk.Entry();
+		this.entry7.CanFocus = true;
+		this.entry7.Name = "entry7";
+		this.entry7.IsEditable = true;
+		this.entry7.InvisibleChar = '●';
+		this.hbox3.Add(this.entry7);
+		global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.entry7]));
+		w15.Position = 0;
+		// Container child hbox3.Gtk.Box+BoxChild
+		this.entry9 = new global::Gtk.Entry();
+		this.entry9.CanFocus = true;
+		this.entry9.Name = "entry9";
+		this.entry9.IsEditable = true;
+		this.entry9.InvisibleChar = '●';
+		this.hbox3.Add(this.entry9);
+		global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.entry9]));
+		w16.Position = 1;
+		// Container child hbox3.Gtk.Box+BoxChild
+		this.entry11 = new global::Gtk.Entry();
+		this.entry11.CanFocus = true;
+		this.entry11.Name = "entry11";
+		this.entry11.IsEditable = true;
+		this.entry11.InvisibleChar = '●';
+		this.hbox3.Add(this.entry11);
+		global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.entry11]));
+		w17.Position = 2;
+		this.hbox1.Add(this.hbox3);
+		global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.hbox3]));
+		w18.Position = 1;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.hbox5 = new global::Gtk.HBox();
+		this.hbox5.Name = "hbox5";
+		this.hbox5.Spacing = 6;
+		// Container child hbox5.Gtk.Box+BoxChild
+		this.entry13 = new global::Gtk.Entry();
+		this.entry13.CanFocus = true;
+		this.entry13.Name = "entry13";
+		this.entry13.IsEditable = true;
+		this.entry13.InvisibleChar = '●';
+		this.hbox5.Add(this.entry13);
+		global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.entry13]));
+		w19.Position = 0;
+		// Container child hbox5.Gtk.Box+BoxChild
+		this.entry15 = new global::Gtk.Entry();
+		this.entry15.CanFocus = true;
+		this.entry15.Name = "entry15";
+		this.entry15.IsEditable = true;
+		this.entry15.InvisibleChar = '●';
+		this.hbox5.Add(this.entry15);
+		global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.entry15]));
+		w20.Position = 1;
+		// Container child hbox5.Gtk.Box+BoxChild
+		this.hbox9 = new global::Gtk.HBox();
+		this.hbox9.Name = "hbox9";
+		this.hbox9.Spacing = 6;
+		// Container child hbox9.Gtk.Box+BoxChild
+		this.entry17 = new global::Gtk.Entry();
+		this.entry17.CanFocus = true;
+		this.entry17.Name = "entry17";
+		this.entry17.IsEditable = true;
+		this.entry17.InvisibleChar = '●';
+		this.hbox9.Add(this.entry17);
+		global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.entry17]));
+		w21.Position = 0;
+		// Container child hbox9.Gtk.Box+BoxChild
+		this.entry19 = new global::Gtk.Entry();
+		this.entry19.CanFocus = true;
+		this.entry19.Name = "entry19";
+		this.entry19.IsEditable = true;
+		this.entry19.InvisibleChar = '●';
+		this.hbox9.Add(this.entry19);
+		global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.entry19]));
+		w22.Position = 1;
+		this.hbox5.Add(this.hbox9);
+		global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.hbox5[this.hbox9]));
+		w23.Position = 2;
+		this.hbox1.Add(this.hbox5);
+		global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.hbox5]));
+		w24.Position = 2;
+		this.Manu.Add(this.hbox1);
+		global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.Manu[this.hbox1]));
+		w25.Position = 1;
+		w25.Expand = false;
+		w25.Fill = false;
+		// Container child Manu.Gtk.Box+BoxChild
+		this.Text = new global::Gtk.Label();
+		this.Text.Name = "Text";
+		this.Text.LabelProp = global::Mono.Unix.Catalog.GetString("label1");
+		this.Manu.Add(this.Text);
+		global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.Manu[this.Text]));
+		w26.Position = 2;
+		w26.Expand = false;
+		w26.Fill = false;
 		this.Add(this.Manu);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 781;
+		this.DefaultWidth = 1690;
 		this.DefaultHeight = 617;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+		this.AddButton.ButtonPressEvent += new global::Gtk.ButtonPressEventHandler(this.OnAddButtonButtonPressEvent);
+		this.Delete.ButtonPressEvent += new global::Gtk.ButtonPressEventHandler(this.OnDeleteButtonPressEvent);
 	}
 }

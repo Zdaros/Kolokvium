@@ -62,7 +62,6 @@
     <Compile Include="Classes\Oblast.cs" />
     <Compile Include="Classes\HumanSettlement.cs" />
     <Compile Include="Classes\SamplingData.cs" />
-    <Compile Include="Classes\ProgramLogic.cs" />
     <Compile Include="gtk-gui\MainWindow.cs" />
   </ItemGroup>
   <ItemGroup>

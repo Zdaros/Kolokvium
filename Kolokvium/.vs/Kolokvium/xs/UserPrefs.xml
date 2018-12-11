@@ -2,9 +2,8 @@
   <MonoDevelop.Ide.ItemProperties.Kolokvium PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Kolokvium/Classes/dbWork.cs">
     <Files>
-      <File FileName="Kolokvium/db/Table_matrix.txt" Line="1" Column="125" />
-      <File FileName="Kolokvium/MainWindow.cs" Line="6" Column="5" />
-      <File FileName="Kolokvium/Classes/dbWork.cs" Line="22" Column="13" />
+      <File FileName="Kolokvium/Classes/dbWork.cs" Line="75" Column="10" />
+      <File FileName="Kolokvium/MainWindow.cs" Line="33" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
